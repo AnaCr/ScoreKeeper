@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#66bb6a</color>
+    <color name="colorPrimaryDark">#338a3e</color>
+    <color name="colorAccent">#01579b</color>
+    <color name="playerColor">#616161</color>
+    <color name="scoreColor">#000000</color>
+    <color name="resultColor">#aa00ff</color>
+</resources>

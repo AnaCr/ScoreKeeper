@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <string name="playerOne">Ana</string>
+    <string name="playerTwo">Ivan</string>
+    <string name="initialScore">0</string>
+    <string name="holeInOne">hole in one</string>
+    <string name="twoStrokes">2 strokes</string>
+    <string name="threeStrokes">3 strokes</string>
+    <string name="fourStrokes">4 strokes</string>
+    <string name="fiveStrokes">5 strokes</string>
+    <string name="reset">reset</string>
+    <string name="hole">Hole: 1</string>
+    <string name="holeNum">1</string>
+    <string name="p1Result"> </string>
+    <string name="p2Result"> </string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="xsMargin">4dp</dimen>
+    <dimen name="smMargin">8dp</dimen>
+    <dimen name="mdMargin">16dp</dimen>
+    <dimen name="lgMargin">24dp</dimen>
+    <dimen name="smTextSize">20sp</dimen>
+    <dimen name="playerNameSize">24sp</dimen>
+    <dimen name="scoreSize">56sp</dimen>
+</resources>
