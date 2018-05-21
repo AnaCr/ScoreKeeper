@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- Margins -->
     <dimen name="xsMargin">4dp</dimen>
     <dimen name="smMargin">8dp</dimen>
     <dimen name="mdMargin">16dp</dimen>
     <dimen name="lgMargin">24dp</dimen>
+
+    <!-- Text Sizes -->
     <dimen name="smTextSize">20sp</dimen>
-    <dimen name="playerNameSize">24sp</dimen>
-    <dimen name="scoreSize">56sp</dimen>
+    <dimen name="mdTextSize">24sp</dimen>
+    <dimen name="lgTextSize">56sp</dimen>
+
+    <!--Logo Size-->
+    <dimen name="logoSize">200dp</dimen>
 </resources>

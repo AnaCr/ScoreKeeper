@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anala.scorekeeper.ScoreBoardActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:id="@+id/logoAndTeamsView"
+        android:layout_weight="15">
+
+        <ImageView
+            android:src="@drawable/minigolflogo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:contentDescription="@string/logo_description"/>
+
+        <LinearLayout
+            android:id="@+id/twoPlayerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/smMargin">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/playerOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/smMargin"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="@dimen/mdTextSize"
+                    android:textColor="@color/playerColor"
+                    android:text="@string/playerOne" />
+
+                <TextView
+                    android:id="@+id/playerOneScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="@dimen/lgTextSize"
+                    android:textColor="@color/scoreColor"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/initialScore"
+                    android:layout_marginBottom="@dimen/smMargin"/>
+
+                <TextView
+                    android:text="@string/p1Result"
+                    android:id="@+id/resultP1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/mdTextSize"
+                    android:gravity="center"
+                    android:textColor="@color/resultColor"
+                    android:layout_marginBottom="@dimen/smMargin"/>
+
+                <Button
+                    android:id="@+id/holeInOne_p1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/holeInOne"
+                    android:layout_marginLeft="@dimen/lgMargin"
+                    android:layout_marginRight="@dimen/lgMargin"
+                    android:onClick="holeInOneP1"/>
+
+                <Button
+                    android:id="@+id/twoStrokeBtn_p1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/twoStrokes"
+                    android:layout_marginLeft="@dimen/lgMargin"
+                    android:layout_marginRight="@dimen/lgMargin"
+                    android:onClick="plusTwoP1"/>
+
+                <Button
+                    android:id="@+id/threeStrokeBtn_p1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/threeStrokes"
+                    android:layout_marginLeft="@dimen/lgMargin"
+                    android:layout_marginRight="@dimen/lgMargin"
+                    android:onClick="plusThreeP1"/>
+
+                <Button
+                    android:id="@+id/fourStrokeBtn_p1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fourStrokes"
+                    android:layout_marginLeft="@dimen/lgMargin"
+                    android:layout_marginRight="@dimen/lgMargin"
+                    android:onClick="plusFourP1"/>
+
+                <Button
+                    android:id="@+id/fiveStrokeBtn_p1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fiveStrokes"
+                    android:layout_marginLeft="@dimen/lgMargin"
+                    android:layout_marginRight="@dimen/lgMargin"
+                    android:onClick="plusFiveP1"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/playerTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/smMargin"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="@dimen/mdTextSize"
+                    android:textColor="@color/playerColor"
+                    android:text="@string/playerTwo" />
+
+                <TextView
+                    android:id="@+id/playerTwoScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="@dimen/lgTextSize"
+                    android:textColor="@color/scoreColor"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/initialScore"
+                    android:layout_marginBottom="@dimen/smMargin"/>
+
+                <TextView
+                    android:text="@string/p2Result"
+                    android:id="@+id/resultP2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/mdTextSize"
+                    android:gravity="center"
+                    android:textColor="@color/resultColor"
+                    android:layout_marginBottom="@dimen/smMargin"/>
+
+                <Button
+                    android:id="@+id/holeInOne_p2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/holeInOne"
+                    android:layout_marginLeft="@dimen/lgMargin"
+                    android:layout_marginRight="@dimen/lgMargin"
+                    android:onClick="holeInOneP2"/>
+
+                <Button
+                    android:id="@+id/twoStrokeBtn_p2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/twoStrokes"
+                    android:layout_marginLeft="@dimen/lgMargin"
+                    android:layout_marginRight="@dimen/lgMargin"
+                    android:onClick="plusTwoP2"/>
+
+                <Button
+                    android:id="@+id/threeStrokeBtn_p2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/threeStrokes"
+                    android:layout_marginLeft="@dimen/lgMargin"
+                    android:layout_marginRight="@dimen/lgMargin"
+                    android:onClick="plusThreeP2"/>
+
+                <Button
+                    android:id="@+id/fourStrokeBtn_p2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fourStrokes"
+                    android:layout_marginLeft="@dimen/lgMargin"
+                    android:layout_marginRight="@dimen/lgMargin"
+                    android:onClick="plusFourP2"/>
+
+                <Button
+                    android:id="@+id/fiveStrokeBtn_p2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fiveStrokes"
+                    android:layout_marginLeft="@dimen/lgMargin"
+                    android:layout_marginRight="@dimen/lgMargin"
+                    android:onClick="plusFiveP2"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/holeTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/hole"
+        android:textSize="@dimen/smTextSize"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:layout_marginBottom="@dimen/smMargin"
+        android:onClick="resetGame"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
